@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3O4-Dy-Jko">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9wO-Zr-Kod">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="3O4-Dy-Jko" customClass="ViewController" customModule="BannerCollectionTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ugf-WJ-sOq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hO9-zg-8ot">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerTablCell" rowHeight="208" id="Dbp-oL-4Ig" customClass="BannerTablCell" customModule="LiveCaptureObject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="208"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dbp-oL-4Ig" id="SuU-gh-UI3">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="208"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-6y-Mke">
+                                                    <rect key="frame" x="-11" y="-20" width="414" height="238"/>
+                                                    <subviews>
+                                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IIS-A3-ODS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pca-oJ-8Zp">
+                                                                <size key="itemSize" width="351" height="199"/>
+                                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                <inset key="sectionInset" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                            </collectionViewFlowLayout>
+                                                            <cells>
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCollectionCell" id="rI4-tq-gX9" customClass="BannerCollectionCell" customModule="LiveCaptureObject" customModuleProvider="target">
+                                                                    <rect key="frame" x="10" y="5" width="351" height="198"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7aQ-FK-Rr8">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="198"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner2" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-kb-koh">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="351" height="198"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="200" id="oAj-uR-E86"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstItem="cxW-kb-koh" firstAttribute="top" secondItem="7aQ-FK-Rr8" secondAttribute="top" id="39x-7S-DCb"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="cxW-kb-koh" secondAttribute="bottom" id="571-Kp-itx"/>
+                                                                            <constraint firstItem="cxW-kb-koh" firstAttribute="leading" secondItem="7aQ-FK-Rr8" secondAttribute="leading" id="DHK-U1-cb7"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="cxW-kb-koh" secondAttribute="trailing" id="UPs-0P-LQG"/>
+                                                                        </constraints>
+                                                                    </collectionViewCellContentView>
+                                                                    <size key="customSize" width="351" height="198"/>
+                                                                    <connections>
+                                                                        <outlet property="bannerImage" destination="cxW-kb-koh" id="lwO-Ke-jpc"/>
+                                                                    </connections>
+                                                                </collectionViewCell>
+                                                            </cells>
+                                                        </collectionView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTO-bK-Xvi">
+                                                            <rect key="frame" x="0.0" y="208" width="414" height="30"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2s-5N-7pa" customClass="AdvancedPageControlView" customModule="AdvancedPageControl">
+                                                                    <rect key="frame" x="184.5" y="13" width="45" height="4"/>
+                                                                    <color key="backgroundColor" systemColor="tintColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="45" id="84f-Ko-Cj9"/>
+                                                                        <constraint firstAttribute="height" constant="4" id="q8x-Ub-C8D"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="R2s-5N-7pa" firstAttribute="centerY" secondItem="iTO-bK-Xvi" secondAttribute="centerY" id="5ec-Ld-xS6"/>
+                                                                <constraint firstItem="R2s-5N-7pa" firstAttribute="centerX" secondItem="iTO-bK-Xvi" secondAttribute="centerX" id="din-Mw-0mh"/>
+                                                                <constraint firstAttribute="height" constant="30" id="gAG-cJ-557"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kcc-6y-Mke" firstAttribute="top" secondItem="SuU-gh-UI3" secondAttribute="top" id="65h-IV-4px"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kcc-6y-Mke" secondAttribute="trailing" id="bsh-yu-Wbm"/>
+                                                <constraint firstItem="Kcc-6y-Mke" firstAttribute="leading" secondItem="SuU-gh-UI3" secondAttribute="leading" id="mTb-hB-Kgn"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kcc-6y-Mke" secondAttribute="bottom" id="n5l-CA-no9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="IIS-A3-ODS" id="MYA-so-KeQ"/>
+                                            <outlet property="pageControl" destination="R2s-5N-7pa" id="rsO-Gp-85k"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3O4-Dy-Jko" id="C8n-8e-8z2"/>
+                                    <outlet property="delegate" destination="3O4-Dy-Jko" id="x68-eS-ibj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iB9-5o-sso"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hO9-zg-8ot" secondAttribute="bottom" id="JKO-Z1-2q7"/>
+                            <constraint firstItem="hO9-zg-8ot" firstAttribute="leading" secondItem="iB9-5o-sso" secondAttribute="leading" id="h6E-Vv-Yud"/>
+                            <constraint firstItem="iB9-5o-sso" firstAttribute="trailing" secondItem="hO9-zg-8ot" secondAttribute="trailing" id="yGG-Bo-WgH"/>
+                            <constraint firstItem="hO9-zg-8ot" firstAttribute="top" secondItem="iB9-5o-sso" secondAttribute="top" id="yP0-Ck-z5T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="hO9-zg-8ot" id="mJ4-FR-Kng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oy1-Ro-gyj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="-144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Banner2" width="1000" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

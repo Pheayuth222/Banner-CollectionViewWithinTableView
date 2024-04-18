@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "advancedpagecontrol",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mohn93/AdvancedPageControl.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "acf23353fd627b102bd98214ba625bbfe4ee3831"
+      }
+    },
+    {
+      "identity" : "extension",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DingSoung/Extension.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ab54a7716992e5c5ba8d9949c53dea0b5450f64e"
+      }
+    }
+  ],
+  "version" : 2
+}
